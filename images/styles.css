@@ -26,15 +26,13 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
-
 }
 
-/* ??? */
-#navbar_logo { 
+#navbar__logo { 
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
-    -webkit-backdrop-clip: text;
+    -webkit-background-clip: text; 
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
@@ -46,10 +44,7 @@
 }
 
 .fa-gem {
-    margin-right: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
+    margin-right: 0.5rem; 
 }
 
 .navbar__menu {
@@ -78,7 +73,6 @@
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    width: 100%;
 }
 
 .button {
@@ -87,13 +81,14 @@
     align-items: center;
     text-decoration: none;
     padding: 10px 20px;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto; 
     border: none;
     outline: none;
     border-radius: 4px;
     background: #f77062;
     color: #fff;
+    transition: all 0.3s ease;
 }
 
 .button:hover {
@@ -106,7 +101,7 @@
     transition: all 0.3s ease;
 }
 
-@media sceem and (max-width: 960px) {
+@media screen and (max-width: 960px) {
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -132,11 +127,12 @@
     }
 
     .navbar__menu.active {
+        background: #131313;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 50;
+        height: 50vh;
         font-size: 1.6rem;
     }
 
@@ -150,10 +146,12 @@
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
         background: #fff;
+        display: block;
+        cursor: pointer;
     }
 
     .navbar__item {
-        width: 1000%;
+        width: 100%;
     }
 
     .navbar__links {
@@ -170,7 +168,7 @@
         transform: translate(5%, 20%);
     }
 
-    .navbar_btn {
+    .navbar__btn {
         padding-bottom: 2rem;
     }
 
@@ -181,11 +179,6 @@
         width: 80%;
         height: 80px;
         margin: 0;
-    }
-
-    .navbar__toggle .bar {
-        display: block;
-        cursor: pointer;
     }
 
     #mobile-menu.is-active .bar:nth-child(2) {
@@ -199,9 +192,4 @@
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
-
-
-
-
 }
