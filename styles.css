@@ -29,6 +29,8 @@
 }
 
 #navbar__logo {
+  display: flex;
+  gap: 8px;
   background-color: #ff8177;
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
@@ -41,6 +43,7 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  color: #fff;
 }
 
 .fa-gem {
@@ -138,6 +141,8 @@
 
   #navbar__logo {
     padding-left: 25px;
+    height: 30px;
+    width: auto;
   }
 
   .navbar__toggle .bar {
