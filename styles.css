@@ -446,7 +446,7 @@
   }
 
   .services h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-top: 12rem;
   }
 }
@@ -481,6 +481,7 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  gap: 12px;
 }
 
 .footer__links {
